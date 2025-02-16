@@ -4,7 +4,6 @@ import imgC from '../assets/imgC.jpeg';
 import imgD from '../assets/imgD.jpeg';
 import imgE from '../assets/imgE.jpeg';
 import imgF from '../assets/imgF.webp';
-import imgG from '../assets/imgG.webp';
 import imgH from '../assets/imgH.webp';
 import styles from './Home.module.css';
 import react from '../assets/react.svg';
@@ -33,7 +32,7 @@ const Home = ({ companyName }) => {
 
         {/* Carousel Items */}
         <div className={`carousel-inner ${styles.carouselInner}`}>
-          {[ imgB, imgC, imgD, imgE, imgF, imgG, imgH].map((image, index) => (
+          {[ imgB, imgC, imgD, imgE, imgF,  imgH].map((image, index) => (
             <div key={index} className={`item ${index === 0 ? 'active' : ''} ${styles.carouselItem}`}>
               <img src={image} alt={`Slide ${index + 1}`} className={styles.carouselImage} />
               <div className="carousel-caption">{/* Add captions if needed */}</div>
